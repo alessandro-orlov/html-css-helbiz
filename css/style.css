@@ -1,0 +1,94 @@
+/*====================*/
+/* BEGIN COMMON RULES */
+body {
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0;
+}
+/* END COMMON RULES */
+/*==================*/
+
+/*==============*/
+/* BEGIN HEADER */
+
+/* top navigation */
+.logo {
+  padding: 26px 0;
+}
+
+.logo img {
+height: 15px;
+}
+
+nav,
+.lang-setting {
+text-align: right;
+}
+
+ul {
+  line-height: 70px;
+}
+
+ul>li {
+  display: inline-block;
+}
+
+li>a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 10px;
+  font-size: 11px;
+  color: #333;
+}
+
+li a:last-child {
+  margin-right: 0;
+}
+
+.lang-setting  li a {
+  border-right:  1px solid #333;
+}
+
+.lang-setting li:last-child a {
+  border-right: none;
+}
+
+/* jumbotron */
+.jumbotron {
+  background-image: url(../img/header-jumbo.jpg);
+  background-size: cover;
+  height: 650px;
+  position: relative;
+}
+
+h1.slogan {
+  font-size: 3em;
+}
+
+.jumbotron .teaser {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.teaser p {
+  padding: 30px 0;
+  font-size: 1.5em;
+}
+
+
+/* END HEADER */
+/*============*/
