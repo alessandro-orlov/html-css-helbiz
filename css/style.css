@@ -10,10 +10,22 @@ ul {
   list-style: none;
 }
 
+p {
+  padding: 30px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 .wrapper {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0;
+}
+
+.center {
+  text-align: center;
 }
 /* END COMMON RULES */
 /*==================*/
@@ -43,12 +55,14 @@ ul>li {
   display: inline-block;
 }
 
+a {
+  color: #333;
+}
+
 li>a {
-  text-decoration: none;
   text-transform: uppercase;
   padding: 0 10px;
   font-size: 11px;
-  color: #333;
 }
 
 li a:last-child {
@@ -91,9 +105,51 @@ h1.slogan {
 }
 
 .teaser p {
-  padding: 30px 0;
-  font-size: 1.5em;
+  font-size: 1.1em;
 }
 
 /* END HEADER */
 /*============*/
+
+/*============*/
+/* BEGIN MAIN */
+
+/* Products SECTION */
+#products {
+  padding: 20px 0;
+}
+
+.product-box {
+  padding: 20px;
+}
+
+.product-card {
+  padding: 70px 0 40px 0;
+  background-color: #fafafa;
+}
+
+.product-card img {
+  height: 22px;
+}
+
+.product-card p {
+  font-size: 1.5em;
+}
+
+.product-card a {
+  font-size: 1.1em;
+  color: blue;
+}
+
+.product-card a:hover {
+  text-decoration: underline;
+}
+
+.product-card img.transport {
+  display: block;
+  height: 370px;
+  margin: 0 auto;
+}
+
+/* END MAIN */
+/*==========*/
