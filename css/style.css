@@ -12,6 +12,7 @@ ul {
 
 p {
   padding: 30px 0;
+  line-height: 1.5em;
 }
 
 a {
@@ -151,5 +152,62 @@ h1.slogan {
   margin: 0 auto;
 }
 
+/* Explanation SECTION */
+
+.explanation-top {
+  background-image: url(../img/HelbizBanner.jpg);
+  background-size: cover;
+  height: 450px;
+  position: relative;
+}
+
+.explanation-top img {
+  display: block;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+  top: 30%;
+}
+
+
+.explanation-bottom h2 {
+  font-size: 2.2em;
+}
+
+.explanation-bottom p {
+  padding: 0;
+}
+
+.explanation-bottom-1,
+.explanation-bottom-2 {
+padding: 100px;
+}
+
 /* END MAIN */
 /*==========*/
+
+/*=============*/
+/* MEDIA QUERY */
+@media screen and (min-width:768px) and (max-width:991px) {
+  .explanation-bottom {
+    margin-top: 260px;
+    text-align: center;
+  }
+
+  .explanation-bottom-1,
+  .explanation-bottom-2 {
+  padding: 10px;
+  }
+}
+
+@media all and (max-width:767px) {
+  .explanation-bottom {
+    text-align: center;
+    margin-top: 260px;
+  }
+
+  .explanation-bottom-1,
+  .explanation-bottom-2 {
+  padding: 10px;
+  }
+}
