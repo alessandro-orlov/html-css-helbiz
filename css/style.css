@@ -27,7 +27,7 @@ ul {
 }
 
 .logo img {
-height: 15px;
+height: 16px;
 }
 
 nav,
@@ -63,6 +63,12 @@ li a:last-child {
   border-right: none;
 }
 
+.hamburger-menu {
+  font-size: 25px;
+  line-height: 70px;
+  text-align: right;
+}
+
 /* jumbotron */
 .jumbotron {
   background-image: url(../img/header-jumbo.jpg);
@@ -88,7 +94,6 @@ h1.slogan {
   padding: 30px 0;
   font-size: 1.5em;
 }
-
 
 /* END HEADER */
 /*============*/
