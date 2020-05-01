@@ -201,10 +201,11 @@ padding: 80px;
   background-image: url('../img/ScooterHelbiz-2400.jpg');
   background-size: cover;
   margin: 20px 0;
+  min-height: 400px;
 }
 
 .big-top-card .card-content {
-  padding: 120px 120px;
+  padding: 100px;
 }
 
  .big-top-card .card-content h2 {
@@ -215,7 +216,6 @@ padding: 80px;
 /* Card content */
 .card-content {
   padding: 30px 20px 0;
-  /* min-height: 500px; */
   overflow: hidden;
 }
 
@@ -236,13 +236,20 @@ padding: 80px;
 .left-card {
   margin-right: 10px;
   background-image: linear-gradient(#415669, #263039);
+  max-height: 410px;
+  overflow: hidden;
 }
 
 .left-card img {
   display: block;
-  height: 350px;
+  width: 90%;
+  height: 90%;
   margin: 0 auto;
   margin-bottom: -100px;
+}
+
+.left-card .card-content {
+  min-height: 410px;
 }
 
 /* right card */
@@ -253,7 +260,7 @@ padding: 80px;
 .right-card .card-content {
   background-image: url('../img/Cities-1500.jpg');
   background-size: cover;
-  padding-bottom: 250px;
+  min-height: 410px;
 }
 
 
@@ -261,9 +268,8 @@ padding: 80px;
 .social-banner {
   background-image: url(../img/Social-Banner.jpg);
   background-size: cover;
-  height: 350px;
-  position: relative;
-  margin-bottom: 20px;
+  height: 400px;
+  margin: 10px 0 20px;
   position: relative;
 }
 
@@ -364,13 +370,32 @@ footer li>a {
 /*============*/
 
 
-/*=============*/
-/* MEDIA QUERY */
+/*==================================*/
+/* BEGIN MEDIA QUERY  768px - 991px */
 @media screen and (min-width:768px) and (max-width:991px) {
-  /* eplanation section */
+
+  /* Header 768 - 991 */
+  h1.slogan {
+    font-size: 3em;
+  }
+
+  /* Products Section 768 - 991 */
+  .product-card p {
+    font-size: 1.4em;
+  }
+
+  /* Explanation section 768 - 991 */
   .explanation-bottom {
     margin-top: 260px;
     text-align: center;
+  }
+
+  .explanation-bottom p {
+    font-size: 1.2em;
+  }
+
+  .explanation-bottom h2 {
+  font-size: 2.3em;
   }
 
   .explanation-bottom-1,
@@ -378,20 +403,30 @@ footer li>a {
   padding: 10px;
   }
 
-  /* cards section */
+  /* cards section 768 - 991 */
   .big-top-card,
   .left-card,
   .right-card{
     margin: 10px;
   }
 
-  .left-card .card-content img {
-    height: 350px;
+  .big-top-card .card-content {
+    padding: 130px;
   }
 
-  /* footer */
+  .left-card .card-content img {
+    height: 80%;
+    width: 80%
+    margin-bottom: -100px;
+  }
+
+  /* footer 768 -991 */
   footer {
     padding: 50px 0;
+  }
+
+  .footer-middle {
+    padding: 40px 0;
   }
 
   footer .link-list {
@@ -400,15 +435,43 @@ footer li>a {
   }
 
   footer .middle-link {
-    margin-top: 20px;
+    margin-top: 30px;
   }
-}
 
+}
+/* END MEDIA QUERY  768px - 991px */
+/*================================*/
+
+/*===========================*/
+/* BEGIN MEDIA QUERY < 768px */
 @media all and (max-width:767px) {
-  /* eplanation section */
+
+  /* Header < 767 */
+  h1.slogan {
+    font-size: 2.5em;
+  }
+
+  .teaser p {
+    font-size: 1em;
+  }
+
+  /* Products Section < 767 */
+  .product-card p {
+    font-size: 1.4em;
+  }
+
+  /* Explanation section < 767 */
   .explanation-bottom {
     text-align: center;
-    margin-top: 260px;
+    margin-top: 350px;
+  }
+
+  .explanation-bottom h2 {
+    font-size: 2.4em;
+  }
+
+  .explanation-bottom p {
+    font-size: 1.3em;
   }
 
   .explanation-bottom-1,
@@ -416,30 +479,37 @@ footer li>a {
   padding: 10px;
   }
 
-  /* cards section */
+  /* cards section < 767 */
   .big-top-card,
   .left-card,
   .right-card{
     margin: 10px;
   }
 
-  .left-card .card-content img {
-    height: 300px;
+  .left-card img {
+    width: 80%;
+    height: 80%;
+    margin-bottom: -100px;
   }
 
+  /* footer < 767 */
   footer {
     padding: 50px 0;
   }
 
+  .footer-middle {
+    padding: 40px 0;
+  }
+
   footer .link-list {
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 0px;
   }
 
   footer .middle-link {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
 }
-/* END MEDIA QUERY */
-/*=================*/
+/* END MEDIA QUERY < 768 */
+/*=======================*/
