@@ -8,9 +8,7 @@
 
 .debug .container [class*="col-"] {
   background-color: #ffc0cb;
-  border: 1px solid #000;
-  /* height: 180px; */
-  padding: 10px;
+  border: 1px solid blue;
 }
 
 .debug .container [class*="col-"]> .container {
@@ -137,7 +135,7 @@
   .col-xs-offset-10 { margin-left: calc((100%/12) * 10); }
   .col-xs-offset-11 { margin-left: calc((100%/12) * 11); } /* 100% offset */
 
-  .xs-display--none { display: none; }
+  .xs-display-none { display: none; }
 }
 /* END FRAMEWORK */
 /*===============*/

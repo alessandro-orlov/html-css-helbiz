@@ -11,7 +11,7 @@ ul {
 }
 
 p {
-  padding: 30px 0;
+  padding: 20px 0;
   line-height: 1.5em;
 }
 
@@ -48,25 +48,25 @@ nav,
 text-align: right;
 }
 
-ul {
+header ul {
   line-height: 70px;
 }
 
-ul>li {
+header  li {
   display: inline-block;
 }
 
-a {
+header  a {
   color: #333;
 }
 
-li>a {
+header li>a {
   text-transform: uppercase;
   padding: 0 10px;
   font-size: 11px;
 }
 
-li a:last-child {
+header li a:last-child {
   margin-right: 0;
 }
 
@@ -108,7 +108,6 @@ h1.slogan {
 .teaser p {
   font-size: 1.1em;
 }
-
 /* END HEADER */
 /*============*/
 
@@ -125,7 +124,7 @@ h1.slogan {
 }
 
 .product-card {
-  padding: 70px 0 40px 0;
+  padding: 70px 20px 40px;
   background-color: #fafafa;
 }
 
@@ -148,12 +147,12 @@ h1.slogan {
 
 .product-card img.transport {
   display: block;
-  height: 370px;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
 
 /* Explanation SECTION */
-
 .explanation-top {
   background-image: url(../img/HelbizBanner.jpg);
   background-size: cover;
@@ -169,6 +168,9 @@ h1.slogan {
   top: 30%;
 }
 
+.explanation-bottom {
+  margin-bottom: 10px;
+}
 
 .explanation-bottom h2 {
   font-size: 2.2em;
@@ -180,15 +182,193 @@ h1.slogan {
 
 .explanation-bottom-1,
 .explanation-bottom-2 {
-padding: 100px;
+padding: 80px;
 }
+
+/* Cards SECTION */
+#cards {
+  color: #fff;
+}
+
+.big-top-card,
+.left-card,
+.right-card{
+  margin-bottom: 20px;
+}
+
+/* BIG top card */
+.big-top-card {
+  background-image: url('../img/ScooterHelbiz-2400.jpg');
+  background-size: cover;
+  margin: 20px 0;
+}
+
+.big-top-card .card-content {
+  padding: 120px 120px;
+}
+
+ .big-top-card .card-content h2 {
+  font-size: 2.8em;
+  font-weight: 500;
+}
+
+/* Card content */
+.card-content {
+  padding: 30px 20px 0;
+  /* min-height: 500px; */
+  overflow: hidden;
+}
+
+.card-content h2 {
+  font-size: 2.3em;
+  font-weight: 500;
+}
+.card-content p {
+  font-size: 1.3em;
+}
+
+.card-content a {
+  color: #fff;
+  margin: 0 20px;
+}
+
+/* left card */
+.left-card {
+  margin-right: 10px;
+  background-image: linear-gradient(#415669, #263039);
+}
+
+.left-card img {
+  display: block;
+  height: 350px;
+  margin: 0 auto;
+  margin-bottom: -100px;
+}
+
+/* right card */
+.right-card {
+  margin-left: 10px;
+}
+
+.right-card .card-content {
+  background-image: url('../img/Cities-1500.jpg');
+  background-size: cover;
+  padding-bottom: 250px;
+}
+
+
+/* Begin social banner Section */
+.social-banner {
+  background-image: url(../img/Social-Banner.jpg);
+  background-size: cover;
+  height: 350px;
+  position: relative;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.social-tag {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 50px 140px;
+}
+
+.social-tag h2 {
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.social-tag li {
+  display: inline-block;
+}
+
+.social-tag a {
+  color: #333;
+}
+
+.social-tag li>a {
+  margin: 0 10px;
+  font-size: 1.8em;
+}
+
+/* End social banner Section */
 
 /* END MAIN */
 /*==========*/
 
+/*==============*/
+/* BEGIN FOOTER */
+footer {
+  color: #fff;
+  padding: 100px 0;
+  background-color: #000;
+}
+
+footer h3 {
+  text-transform: uppercase;
+  padding-left: 50px;
+  margin-bottom: 15px;
+}
+
+footer li {
+  padding: 10px 50px;
+}
+
+footer li>a {
+  color: #696969;
+  font-size: 0.9em;
+}
+
+.footer-logo {
+  margin-right:
+}
+
+/* footer middle */
+.footer-middle {
+  max-width: 1300px;
+  border-top: 1px solid #696969;
+  border-bottom: 1px solid #696969;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 50px 0;
+}
+
+.footer-middle li {
+  display: inline-block;
+  padding: 0;
+  margin-right: 20px;
+}
+
+.footer-middle li>a {
+  font-size: 1.3em;
+  color: #fff;
+}
+
+.footer-middle .middle-link {
+  padding-left: 50px;
+}
+
+.footer-middle a {
+  color:  #fff;
+  /* line-height: 100px; */
+}
+
+.bottom-apps {
+  padding: 20px;
+}
+
+/* END FOOTER */
+/*============*/
+
+
 /*=============*/
 /* MEDIA QUERY */
 @media screen and (min-width:768px) and (max-width:991px) {
+  /* eplanation section */
   .explanation-bottom {
     margin-top: 260px;
     text-align: center;
@@ -198,9 +378,22 @@ padding: 100px;
   .explanation-bottom-2 {
   padding: 10px;
   }
+
+  /* cards section */
+  .big-top-card,
+  .left-card,
+  .right-card{
+    margin: 10px;
+  }
+
+  .left-card .card-content img {
+    height: 350px;
+  }
+
 }
 
 @media all and (max-width:767px) {
+  /* eplanation section */
   .explanation-bottom {
     text-align: center;
     margin-top: 260px;
@@ -210,4 +403,18 @@ padding: 100px;
   .explanation-bottom-2 {
   padding: 10px;
   }
+
+  /* cards section */
+  .big-top-card,
+  .left-card,
+  .right-card{
+    margin: 10px;
+  }
+
+  .left-card .card-content img {
+    height: 300px;
+  }
+
 }
+/* END MEDIA QUERY */
+/*=================*/
