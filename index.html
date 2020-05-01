@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="css/12bool.css">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+      function on() {
+      document.getElementById("overlay").style.display = "block";
+      }
+
+      function off() {
+      document.getElementById("overlay").style.display = "none";
+      }
+  </script>
   </head>
   <body class="debu">
     <!-- Begin wrapper -->
@@ -51,10 +60,28 @@
           <!-- Nav menu for medium and small device -->
           <div class="lg-display-none col-md-5 col-xs-5">
             <div class="hamburger-menu">
-              <a href="#"><i class="fas fa-bars"></i></a>
+              <a href="#" onclick="on()"><i class="fas fa-bars"></i></a>
             </div>
           </div>
           <!-- Nav menu for medium and small device -->
+
+          <!-- Menu for medium and small devices  -->
+          <div id="overlay">
+            <a href="#" onclick="off()"><img class="close-overlay" src="img/close-overlay.png" alt=""></a>
+            <div class="vertical-menu">
+              <ul>
+                <li><a href="">HELBIZGO</a></li>
+                <li><a href="">HELBIZBIKE</a></li>
+                <li><a href="">COVID-19</a></li>
+                <li><a href="">MOBILITY ANALYTICS </a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">SHOP</a></li>
+              </ul>
+
+            </div>
+
+          </div>
+          <!-- END menu for medium and small devices -->
 
         </div>
         <!-- End navigation container -->
