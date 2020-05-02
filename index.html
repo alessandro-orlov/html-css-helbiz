@@ -4,13 +4,12 @@
     <meta charset="utf-8">
     <title>Helbiz - by Alexander Orlov</title>
     <meta name="description" content="helbiz.com responsive layout by Alexander Orlov">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/12bool.css">
     <link rel="stylesheet" href="css/style.css">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <script>
       function on() {
       document.getElementById("overlay").style.width = "100%";
@@ -22,366 +21,347 @@
     </script>
   </head>
   <body>
-    <!-- Begin wrapper -->
-    <div class="wrapepr">
+    <!-- Begin header -->
+    <header>
+      <!-- begin navigation fixed-row -->
+      <div class="fixed-row">
+        <div class="container">
 
-      <!-- Begin header section-->
-      <header>
+          <div class="col-lg-2 col-lg-offset-1 col-md-5 col-md-offset-1
+          col-xs-5 col-xs-offset-1">
+            <div class="logo">
+              <a href="#"><img src="img/helbiz-new-logo-black.svg" alt="helbiz logo"></a>
+            </div>
+          </div>
 
-        <!--  Begin fixed top menu -->
-        <div class="fixed-row">
-          <div class="container">
-            <div class="col-lg-12 col-md-12 col-xs-12">
+          <div class="col-lg-8 md-display-none xs-display-none">
+            <nav>
+              <ul>
+                <li><a href="#">helbizgo</a></li>
+                <li><a href="#">helbizbike</a></li>
+                <li><a href="#">covid-19</a></li>
+                <li><a href="#">mobility analytics</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">shop</a></li>
+              </ul>
+              <ul class="lang-setting">
+                <li><a href="#">eng</a></li>
+                <li><a href="#">ita</a></li>
+                <li><a href="#">es</a></li>
+              </ul>
+            </nav>
+          </div>
 
-              <!-- begin navigation container -->
+          <!-- Begin hamburger menu -->
+          <div class="lg-display-none col-md-5 col-xs-5">
+            <div class="hamburger-menu">
+              <a href="javascript:void(0)" onclick="on()"><i class="fas fa-bars"></i></a>
+            </div>
+          </div>
+          <!-- End hamburger menu  -->
+
+          <!-- Menu only for medium and small devices  -->
+          <div id="overlay">
+            <div class="container">
+
+              <div class="lg-display-none col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1">
+                <div class="v-menu-top-row over-logo">
+                  <img src="img/helbiz-new-logo-black.svg" alt="helbiz logo">
+                </div>
+              </div>
+
+              <div class="lg-display-none col-md-6 col-xs-6">
+                <div class="vertical-menu">
+                  <ul>
+                    <li><a href="">HELBIZGO</a></li>
+                    <li><a href="">HELBIZBIKE</a></li>
+                    <li><a href="">COVID-19</a></li>
+                    <li><a href="">MOBILITY ANALYTICS </a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">SHOP</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="lg-display-none col-md-2 col-xs-2">
+                <div class="v-menu-top-row over-close">
+                  <span onclick="off()" class="cls-btn"><i class="fas fa-times"></i></span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- END menu only for medium and small devices -->
+
+        </div>
+      </div>
+      <!-- End navigation fixed row -->
+
+      <!-- Begin jumbotron -->
+      <div class="jumbotron">
+        <div class="teaser">
+          <h1 class="slogan">Shared Mobility of Tomorrow</h1>
+          <p>
+            Bringing the future of shared mobility to the streets of the world
+          </p>
+          <img src="img/header-google-play-badge.svg" alt="google play">
+          <img src="img/header-app-store-badge.svg" alt="app store">
+        </div>
+      </div>
+      <!-- End jumbotron -->
+    </header>
+
+    <!-- Begin main -->
+    <main>
+      <!-- Begin products Section -->
+      <section id="products">
+        <div class="container">
+
+          <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="product-box">
+              <div class="product-card center">
+                <img src="img/helbizGO.svg" alt="HelbizGo">
+                <p>Seamless E-Scooter sharing globally.</p>
+                <a href="#">Learn more <i class="fas fa-angle-right"></i> </a>
+                <img class="transport" src="img/Segway.jpg" alt="segway">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="product-box">
+              <div class="product-card center">
+                <img src="img/helbizBike.svg" alt="HelbizBike">
+                <p>Next generation of electric city bikes.</p>
+                <a href="#">Learn more <i class="fas fa-angle-right"></i> </a>
+                <img class="transport" src="img/Bike-2.jpg" alt="Bike">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- End products Section -->
+
+      <!-- Begin explanation Section -->
+      <section id="explanation">
+
+        <div class="explanation-top">
+          <img src="img/iphone.png" alt="phone slider">
+        </div>
+
+        <!-- Begin explanation bottom -->
+        <div class="container explanation-bottom">
+
+          <div class="col-lg-4 col-md-12 col-xs-12">
+            <div class="explanation-bottom-1">
+              <h2>How does Helbiz work?</h2>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-lg-offset-4 col-md-12 col-xs-12">
+            <div class="explanation-bottom-2">
+              <p>
+                <strong>Step 1</strong><br>
+                Leave curbside when finished
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <!-- End explanation bottom -->
+
+      </section>
+      <!-- End explanation Section -->
+
+      <!-- Begin cards Section -->
+      <section id="cards" class="center">
+        <div class="container">
+
+          <!-- Begin big top card  -->
+          <div class="col-lg-12 col-md-12 col-xs-12">
+            <div class="big-top-card">
+
+              <!-- Begin container right -->
               <div class="container">
+                <div class="col-lg-6 col-lg-offset-6 col-md-12 col-xs-12">
 
-                <div class="col-lg-2 col-lg-offset-1 col-md-5 col-md-offset-1 col-xs-5 col-xs-offset-1">
-                  <div class="logo">
-                    <a href="#"><img src="img/helbiz-new-logo-black.svg" alt="helbiz logo"></a>
-                  </div>
-                </div>
-
-                <div class="col-lg-8 md-display-none xs-display-none">
-                  <nav>
-                    <ul>
-                      <li><a href="#">helbizgo</a></li>
-                      <li><a href="#">helbizbike</a></li>
-                      <li><a href="#">covid-19</a></li>
-                      <li><a href="#">mobility analytics</a></li>
-                      <li><a href="#">about</a></li>
-                      <li><a href="#">shop</a></li>
-                    </ul>
-                    <ul class="lang-setting">
-                      <li><a href="#">eng</a></li>
-                      <li><a href="#">ita</a></li>
-                      <li><a href="#">es</a></li>
-                    </ul>
-                  </nav>
-                </div>
-
-                <!-- Begin hamburger menu -->
-                <div class="lg-display-none col-md-5 col-xs-5">
-                  <div class="hamburger-menu">
-                    <a href="javascript:void(0)" onclick="on()"><i class="fas fa-bars"></i></a>
-                  </div>
-                </div>
-                <!-- End hamburger menu  -->
-
-              </div>
-              <!-- End navigation container -->
-
-              <!-- Menu only for medium and small devices  -->
-              <div id="overlay">
-                <div class="container">
-
-                  <div class="lg-display-none col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1">
-                    <div class="v-menu-top-row over-logo">
-                      <img src="img/helbiz-new-logo-black.svg" alt="helbiz logo">
-                    </div>
-                  </div>
-
-                  <div class="lg-display-none col-md-6 col-xs-6">
-                    <div class="vertical-menu">
-                      <ul>
-                        <li><a href="">HELBIZGO</a></li>
-                        <li><a href="">HELBIZBIKE</a></li>
-                        <li><a href="">COVID-19</a></li>
-                        <li><a href="">MOBILITY ANALYTICS </a></li>
-                        <li><a href="">ABOUT</a></li>
-                        <li><a href="">SHOP</a></li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="lg-display-none col-md-2 col-xs-2">
-                    <div class="v-menu-top-row over-close">
-                      <span onclick="off()" class="cls-btn"><i class="fas fa-times"></i></span>
-                    </div>
+                  <div class="card-content">
+                    <h2>Smart mobility on two wheels</h2>
+                    <p>
+                      A cleaner and more convenient alternative to get around your city
+                    </p>
+                    <a href="#">Learn more <i class="fas fa-angle-right"></i> </a>
                   </div>
 
                 </div>
               </div>
-              <!-- END menu only for medium and small devices -->
+              <!-- End container right -->
 
             </div>
           </div>
-        </div>
-        <!--  End fixed top menu -->
+          <!-- End big top card  -->
 
-        <!-- Begin jumbotron -->
-        <div class="jumbotron">
-          <div class="teaser">
-            <h1 class="slogan">Shared Mobility of Tomorrow</h1>
-            <p>
-              Bringing the future of shared mobility to the streets of the world
-            </p>
-            <img src="img/header-google-play-badge.svg" alt="google play">
-            <img src="img/header-app-store-badge.svg" alt="app store">
-          </div>
-        </div>
-        <!-- End jumbotron -->
+          <!-- Begin left card -->
+          <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="left-card">
 
-      </header>
-      <!-- End header Section -->
-
-      <!-- Begin main -->
-      <main>
-
-        <!-- Begin products Section -->
-        <section id="products">
-          <div class="container">
-
-            <div class="col-lg-6 col-md-6 col-xs-12">
-              <div class="product-box">
-                <div class="product-card center">
-                  <img src="img/helbizGO.svg" alt="HelbizGo">
-                  <p>Seamless E-Scooter sharing globally.</p>
-                  <a href="#">Learn more <i class="fas fa-angle-right"></i> </a>
-                  <img class="transport" src="img/Segway.jpg" alt="segway">
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 col-xs-12">
-              <div class="product-box">
-                <div class="product-card center">
-                  <img src="img/helbizBike.svg" alt="HelbizBike">
-                  <p>Next generation of electric city bikes.</p>
-                  <a href="#">Learn more <i class="fas fa-angle-right"></i> </a>
-                  <img class="transport" src="img/Bike-2.jpg" alt="Bike">
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </section>
-        <!-- End products Section -->
-
-        <!-- Begin explanation Section -->
-        <section id="explanation">
-
-          <div class="explanation-top">
-            <img src="img/iphone.png" alt="phone slider">
-          </div>
-
-          <!-- Begin explanation bottom -->
-          <div class="container explanation-bottom">
-
-            <div class="col-lg-4 col-md-12 col-xs-12">
-              <div class="explanation-bottom-1">
-                <h2>How does Helbiz work?</h2>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-lg-offset-4 col-md-12 col-xs-12">
-              <div class="explanation-bottom-2">
+              <div class="card-content">
+                <h2>Get the App</h2>
                 <p>
-                  <strong>Step 1</strong><br>
-                  Leave curbside when finished
+                  Download the App and start rideng today
                 </p>
+                <a href="#">iOS <i class="fas fa-angle-right"></i></a>
+                <a href="#">Android <i class="fas fa-angle-right"></i></a>
+                <img src="img/HelbiZAPP.png" alt="HelbiZAPP">
               </div>
+
             </div>
-
           </div>
-          <!-- End explanation bottom -->
+          <!-- End left card -->
 
-        </section>
-        <!-- End explanation Section -->
+          <!-- Begin right card -->
+          <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="right-card">
 
-        <!-- Begin cards Section -->
-        <section id="cards" class="center">
-          <div class="container">
-
-            <!-- Begin big top card  -->
-            <div class="col-lg-12 col-md-12 col-xs-12">
-              <div class="big-top-card">
-
-                <!-- Begin container right -->
-                <div class="container">
-                  <div class="col-lg-6 col-lg-offset-6 col-md-12 col-xs-12">
-
-                    <div class="card-content">
-                      <h2>Smart mobility on two wheels</h2>
-                      <p>
-                        A cleaner and more convenient alternative to get around your city
-                      </p>
-                      <a href="#">Learn more <i class="fas fa-angle-right"></i> </a>
-                    </div>
-
-                  </div>
-                </div>
-                <!-- End container right -->
-
+              <div class="card-content">
+                <h2>Find us around</h2>
+                <p>Find us around the globe</p>
+                <a href="#">Our city <i class="fas fa-angle-right"></i></a>
               </div>
-            </div>
-            <!-- End big top card  -->
 
-            <!-- Begin left card -->
-            <div class="col-lg-6 col-md-6 col-xs-12">
-              <div class="left-card">
-
-                <div class="card-content">
-                  <h2>Get the App</h2>
-                  <p>
-                    Download the App and start rideng today
-                  </p>
-                  <a href="#">iOS <i class="fas fa-angle-right"></i></a>
-                  <a href="#">Android <i class="fas fa-angle-right"></i></a>
-                  <img src="img/HelbiZAPP.png" alt="HelbiZAPP">
-                </div>
-
-              </div>
-            </div>
-            <!-- End left card -->
-
-            <!-- Begin right card -->
-            <div class="col-lg-6 col-md-6 col-xs-12">
-              <div class="right-card">
-
-                <div class="card-content">
-                  <h2>Find us around</h2>
-                  <p>Find us around the globe</p>
-                  <a href="#">Our city <i class="fas fa-angle-right"></i></a>
-                </div>
-
-              </div>
-            </div>
-            <!-- End right card -->
-
-          </div>
-        </section>
-        <!-- End cards Section -->
-
-        <!-- Begin collage Section -->
-        <section>
-          <div class="social-banner">
-            <div class="social-tag center">
-              <h2>#HelbizFamily</h2>
-              <ul>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-              </ul>
             </div>
           </div>
-        </section>
-        <!-- End collage Section -->
+          <!-- End right card -->
 
-      </main>
-      <!-- End Main-->
+        </div>
+      </section>
+      <!-- End cards Section -->
 
-      <!-- Begin Footer -->
-      <footer>
-
-        <!-- Begin top footer -->
-        <div class="container">
-
-          <div class="col-lg-2 col-lg-offset-1 col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
-            <div class="footer-logo">
-              <a href="#"><img src="img/helbiz-footer-logo.svg" alt="Helbiz logo white"></a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-3 col-md-offset-1 col-xs-10 col-xs-offset-1">
-            <div class="link-list">
-              <h3>Product</h3>
-              <ul>
-                <li><a href="#">HelbizGO</a></li>
-                <li><a href="#">HelbizBike</a></li>
-                <li><a href="#">HelbizCar</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-3 col-md-offset-1 col-xs-10 col-xs-offset-1">
-            <div class="link-list">
-              <h3>Info</h3>
-              <ul>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Company Info</a></li>
-                <li><a href="#">Cities</a></li>
-                <li><a href="#">Sustainability</a></li>
-                <li><a href="#">Franchise</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Careers</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-3 col-md-offset-1 col-xs-10 col-xs-offset-1">
-            <div class="link-list">
-              <h3>Helbiz</h3>
-              <ul>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Newsroom</a></li>
-                <li><a href="#">Media Assets</a></li>
-                <li><a href="#">Blog</a></li>
-              </ul>
-            </div>
+      <!-- Begin collage Section -->
+      <section>
+        <div class="social-banner">
+          <div class="social-tag center">
+            <h2>#HelbizFamily</h2>
+            <ul>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
           </div>
         </div>
-        <!-- End top footer -->
+      </section>
+      <!-- End collage Section -->
+    </main>
+    <!-- End Main-->
 
-        <!-- Begin middle footer -->
-        <div class="container">
-          <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+    <!-- Begin Footer -->
+    <footer>
+      <!-- Begin top footer -->
+      <div class="container">
 
-            <!-- begin middle row -->
-            <div class="footer-middle">
-              <div class="container ">
-
-                  <div class="col-lg-3 col-md-12 col-xs-12">
-                    <div class="helbiz-socila-list">
-                      <ul>
-                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-3 col-md-12 col-xs-12">
-                    <div class="middle-link">
-                      <a href="#">Terms & Conditions</a>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-3 col-md-12 col-xs-12">
-                    <div class="middle-link">
-                      <a href="#">Press & News</a>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-3 col-md-12 col-xs-12">
-                    <div class="middle-link">
-                      <a href="#">© 2020 Helbiz</a>
-                    </div>
-                  </div>
-
-              </div>
-            </div>
-            <!-- End middle row -->
-
+        <div class="col-lg-2 col-lg-offset-1 col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+          <div class="footer-logo">
+            <a href="#"><img src="img/helbiz-footer-logo.svg" alt="Helbiz logo white"></a>
           </div>
         </div>
-        <!-- End middle footer -->
 
-        <!-- Begin bootom footer -->
-        <div class="bottom-apps center">
-          <a href="#"><img src="img/app-store-badge.svg" alt="iOS Helbiz App"></a>
-          <a href="#"><img src="img/google-play-badge.svg" alt="iOS Helbiz App"></a>
+        <div class="col-lg-3 col-md-3 col-md-offset-1 col-xs-10 col-xs-offset-1">
+          <div class="link-list">
+            <h3>Product</h3>
+            <ul>
+              <li><a href="#">HelbizGO</a></li>
+              <li><a href="#">HelbizBike</a></li>
+              <li><a href="#">HelbizCar</a></li>
+            </ul>
+          </div>
         </div>
-        <!-- End bottom footer -->
 
-      </footer>
-      <!-- End Footer -->
+        <div class="col-lg-3 col-md-3 col-md-offset-1 col-xs-10 col-xs-offset-1">
+          <div class="link-list">
+            <h3>Info</h3>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Company Info</a></li>
+              <li><a href="#">Cities</a></li>
+              <li><a href="#">Sustainability</a></li>
+              <li><a href="#">Franchise</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+        </div>
 
-    </div>
-    <!-- End Wrapper -->
+        <div class="col-lg-3 col-md-3 col-md-offset-1 col-xs-10 col-xs-offset-1">
+          <div class="link-list">
+            <h3>Helbiz</h3>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Newsroom</a></li>
+              <li><a href="#">Media Assets</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End top footer -->
+
+      <!-- Begin middle footer -->
+      <div class="container">
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+
+          <!-- begin middle row -->
+          <div class="footer-middle">
+            <div class="container ">
+
+                <div class="col-lg-3 col-md-12 col-xs-12">
+                  <div class="helbiz-socila-list">
+                    <ul>
+                      <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-12 col-xs-12">
+                  <div class="middle-link">
+                    <a href="#">Terms & Conditions</a>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-12 col-xs-12">
+                  <div class="middle-link">
+                    <a href="#">Press & News</a>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-12 col-xs-12">
+                  <div class="middle-link">
+                    <a href="#">© 2020 Helbiz</a>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+          <!-- End middle row -->
+
+        </div>
+      </div>
+      <!-- End middle footer -->
+
+      <!-- Begin bootom footer -->
+      <div class="bottom-apps center">
+        <a href="#"><img src="img/app-store-badge.svg" alt="iOS Helbiz App"></a>
+        <a href="#"><img src="img/google-play-badge.svg" alt="iOS Helbiz App"></a>
+      </div>
+      <!-- End bottom footer -->
+
+    </footer>
+    <!-- End Footer -->
   </body>
 </html>

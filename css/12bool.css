@@ -1,7 +1,7 @@
 /*=================*/
 /* BEGIN FRAMEWORK */
 
-/*  WARNING: add to HTML: <meta content="width=device-width, initial-scale=1" name="viewport" />*/
+/*  WARNING: add to HTML: <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0" />  */
 
 /* BEGIN DEBUG */
 .debug .container {
@@ -33,6 +33,7 @@
 
 .container {
   max-width: 1300px;
+  width: 100%;
   margin: 0 auto;
 }
 .container::after {
