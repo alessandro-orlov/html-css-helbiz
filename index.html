@@ -4,87 +4,110 @@
     <meta charset="utf-8">
     <title>Helbiz - by Alexander Orlov</title>
     <meta name="description" content="helbiz.com responsive layout by Alexander Orlov">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/12bool.css">
     <link rel="stylesheet" href="css/style.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <script>
       function on() {
-      document.getElementById("overlay").style.display = "block";
+      document.getElementById("overlay").style.width = "100%";
       }
 
       function off() {
-      document.getElementById("overlay").style.display = "none";
+      document.getElementById("overlay").style.width = "0%";
       }
-  </script>
+    </script>
   </head>
-  <body class="debu">
+  <body>
     <!-- Begin wrapper -->
     <div class="wrapepr">
 
       <!-- Begin header section-->
       <header>
 
-        <!-- begin navigation container -->
-        <div class="container">
+        <!--  Begin fixed top menu -->
+        <div class="fixed-row">
+          <div class="container">
+            <div class="col-lg-12 col-md-12 col-xs-12">
 
-          <div class="col-lg-2 col-lg-offset-1 col-md-5 col-md-offset-1 col-xs-5 col-xs-offset-1">
-            <div class="logo">
-              <a href="#"><img src="img/helbiz-new-logo-black.svg" alt="helbiz logo"></a>
+              <!-- begin navigation container -->
+              <div class="container">
+
+                <div class="col-lg-2 col-lg-offset-1 col-md-5 col-md-offset-1 col-xs-5 col-xs-offset-1">
+                  <div class="logo">
+                    <a href="#"><img src="img/helbiz-new-logo-black.svg" alt="helbiz logo"></a>
+                  </div>
+                </div>
+
+                <div class="col-lg-8 md-display-none xs-display-none">
+                  <nav>
+                    <ul>
+                      <li><a href="#">helbizgo</a></li>
+                      <li><a href="#">helbizbike</a></li>
+                      <li><a href="#">covid-19</a></li>
+                      <li><a href="#">mobility analytics</a></li>
+                      <li><a href="#">about</a></li>
+                      <li><a href="#">shop</a></li>
+                    </ul>
+                    <ul class="lang-setting">
+                      <li><a href="#">eng</a></li>
+                      <li><a href="#">ita</a></li>
+                      <li><a href="#">es</a></li>
+                    </ul>
+                  </nav>
+                </div>
+
+                <!-- Begin hamburger menu -->
+                <div class="lg-display-none col-md-5 col-xs-5">
+                  <div class="hamburger-menu">
+                    <a href="javascript:void(0)" onclick="on()"><i class="fas fa-bars"></i></a>
+                  </div>
+                </div>
+                <!-- End hamburger menu  -->
+
+              </div>
+              <!-- End navigation container -->
+
+              <!-- Menu only for medium and small devices  -->
+              <div id="overlay">
+                <div class="container">
+
+                  <div class="lg-display-none col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1">
+                    <div class="v-menu-top-row over-logo">
+                      <img src="img/helbiz-new-logo-black.svg" alt="helbiz logo">
+                    </div>
+                  </div>
+
+                  <div class="lg-display-none col-md-6 col-xs-6">
+                    <div class="vertical-menu">
+                      <ul>
+                        <li><a href="">HELBIZGO</a></li>
+                        <li><a href="">HELBIZBIKE</a></li>
+                        <li><a href="">COVID-19</a></li>
+                        <li><a href="">MOBILITY ANALYTICS </a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">SHOP</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="lg-display-none col-md-2 col-xs-2">
+                    <div class="v-menu-top-row over-close">
+                      <span onclick="off()" class="cls-btn"><i class="fas fa-times"></i></span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- END menu only for medium and small devices -->
+
             </div>
           </div>
-
-          <div class="col-lg-6 md-display-none xs-display-none">
-            <nav>
-              <ul>
-                <li><a href="#">helbizgo</a></li>
-                <li><a href="#">helbizbike</a></li>
-                <li><a href="#">covid-19</a></li>
-                <li><a href="#">mobility analytics</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">shop</a></li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="col-lg-2 md-display-none xs-display-none">
-            <div class="lang-setting">
-                <ul>
-                  <li><a href="#">eng</a></li>
-                  <li><a href="#">ita</a></li>
-                  <li><a href="#">es</a></li>
-                </ul>
-            </div>
-          </div>
-
-          <!-- Nav menu for medium and small device -->
-          <div class="lg-display-none col-md-5 col-xs-5">
-            <div class="hamburger-menu">
-              <a href="#" onclick="on()"><i class="fas fa-bars"></i></a>
-            </div>
-          </div>
-          <!-- Nav menu for medium and small device -->
-
-          <!-- Menu for medium and small devices  -->
-          <div id="overlay">
-            <a href="#" onclick="off()"><img class="close-overlay" src="img/close-overlay.png" alt=""></a>
-            <div class="vertical-menu">
-              <ul>
-                <li><a href="">HELBIZGO</a></li>
-                <li><a href="">HELBIZBIKE</a></li>
-                <li><a href="">COVID-19</a></li>
-                <li><a href="">MOBILITY ANALYTICS </a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">SHOP</a></li>
-              </ul>
-
-            </div>
-
-          </div>
-          <!-- END menu for medium and small devices -->
-
         </div>
-        <!-- End navigation container -->
+        <!--  End fixed top menu -->
 
         <!-- Begin jumbotron -->
         <div class="jumbotron">

@@ -1,7 +1,7 @@
 /*====================*/
 /* BEGIN COMMON RULES */
 body {
-  font-family: "Open Sans",sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #333;
 }
@@ -17,6 +17,7 @@ p {
 
 a {
   text-decoration: none;
+  font-family: sans-serif;
 }
 
 .wrapper {
@@ -28,6 +29,7 @@ a {
 .center {
   text-align: center;
 }
+
 /* END COMMON RULES */
 /*==================*/
 
@@ -35,6 +37,25 @@ a {
 /* BEGIN HEADER */
 
 /* top navigation */
+/* .h-menu-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #fff;
+  width: 100%;
+} */
+
+.fixed-row {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
 .logo {
   padding: 26px 0;
 }
@@ -49,7 +70,12 @@ text-align: right;
 }
 
 header ul {
+  display: inline-block;
   line-height: 70px;
+}
+
+ul.lang-setting {
+  margin-left: 10px;
 }
 
 header  li {
@@ -90,13 +116,14 @@ header li a:last-child {
   background-size: cover;
   height: 650px;
   position: relative;
+  margin-top: 72px;
 }
 
 h1.slogan {
   font-size: 3em;
 }
 
-.jumbotron .teaser {
+.teaser {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -108,48 +135,63 @@ h1.slogan {
 .teaser p {
   font-size: 1.1em;
 }
-/* END HEADER */
-/*============*/
 
-/*================*/
-/* HAMBURGER MENU */
+.teaser img {
+  margin: 0 10px;
+}
+
+/* BEGIN HAMBURGER MENU */
 #overlay {
-  display:none;
   position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
   height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
   background-color:#fff;
-  z-index: 35;
-  overflow: hidden;
+  z-index: 100;
+  overflow-x: hidden;
+  transition: all .5s ease;
 }
 
-img.close-overlay {
-  position: absolute;
-  top: 20px;
-  right: 100px;
-  width: 20px;
-  height: 20px;
+.cls-btn {
+  font-size: 20px;
+  cursor: pointer;
 }
+
 .vertical-menu {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
+  margin-top: 80px;
 }
+
+.vertical-menu li {
+  display: block;
+}
+
 .vertical-menu a {
   font-size: 25px;
-  text-decoration: none;
-  transition: text-decoration 2s ease;
-}
-.vertical-menu a:hover {
-  text-decoration: underline;
 }
 
-.vertical-menu li {display: block;}
-/*================*/
+.v-menu-top-row {
+  line-height: 100px;
+}
+
+.over-logo {
+  text-align: left;
+}
+
+.over-close{
+  text-align: right;
+}
+
+.v-menu-top-row img {
+  height: 10px;
+  vertical-align: middle;
+}
+/* END HAMBURGER MENU */
+
+
+/* END HEADER */
+/*============*/
 
 /*============*/
 /* BEGIN MAIN */
@@ -289,7 +331,7 @@ padding: 80px;
 }
 
 .left-card .card-content {
-  min-height: 410px;
+  min-height: 400px;
 }
 
 /* right card */
@@ -363,10 +405,10 @@ footer h3 {
 }
 
 footer li {
-  padding: 10px 0;
+  padding: 12px 0;
 }
 
-footer li>a {
+footer li > a {
   color: #696969;
   font-size: 0.9em;
 }
@@ -393,11 +435,14 @@ footer li>a {
 
 .footer-middle a {
   color:  #fff;
-  /* line-height: 100px; */
 }
 
 .bottom-apps {
   padding: 20px;
+}
+
+.bottom-apps img {
+  margin: 0 10px;
 }
 /* END FOOTER */
 /*============*/
@@ -410,6 +455,10 @@ footer li>a {
   /* Header 768 - 991 */
   h1.slogan {
     font-size: 3em;
+  }
+
+  .teaser img {
+    margin: 5px 0;
   }
 
   /* Products Section 768 - 991 */
@@ -458,7 +507,7 @@ footer li>a {
     padding: 50px 0;
   }
 
-  .footer-middle {
+  footer .footer-middle {
     padding: 40px 0;
   }
 
@@ -467,8 +516,20 @@ footer li>a {
     margin-left: 0px;
   }
 
-  footer .middle-link {
+  footer li > a {
+    font-size: 1em;
+  }
+
+  .footer-middle li {
+    margin-right: 30px;
+  }
+
+  .middle-link {
     margin-top: 30px;
+  }
+
+  .middle-link a {
+    font-size: 1.1em;
   }
 
 }
@@ -481,11 +542,15 @@ footer li>a {
 
   /* Header < 767 */
   h1.slogan {
-    font-size: 2.5em;
+    font-size: 2.3em;
   }
 
   .teaser p {
-    font-size: 1em;
+    font-size: 1.3em;
+  }
+
+  .teaser img {
+    margin: 5px 0;
   }
 
   /* Products Section < 767 */
@@ -496,7 +561,7 @@ footer li>a {
   /* Explanation section < 767 */
   .explanation-bottom {
     text-align: center;
-    margin-top: 350px;
+    margin-top: 260px;
   }
 
   .explanation-bottom h2 {
@@ -530,17 +595,25 @@ footer li>a {
     padding: 50px 0;
   }
 
-  .footer-middle {
-    padding: 40px 0;
-  }
-
   footer .link-list {
-    margin-top: 40px;
+    margin-top: 50px;
     margin-left: 0px;
   }
 
   footer .middle-link {
     margin-top: 30px;
+  }
+
+  .middle-link a {
+    font-size: 1.2em;
+  }
+
+  footer li > a {
+    font-size: 1.1em;
+  }
+
+  .footer-middle li {
+    margin-right: 30px;
   }
 
 }
