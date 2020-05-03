@@ -82,6 +82,11 @@ header li>a {
   text-transform: uppercase;
   padding: 0 10px;
   font-size: 11px;
+  transition: all .3s ease;
+}
+
+nav li>a:hover {
+  text-decoration: underline;
 }
 
 header li a:last-child {
@@ -145,11 +150,6 @@ h1.slogan {
   transition: all .5s ease;
 }
 
-.cls-btn {
-  font-size: 20px;
-  cursor: pointer;
-}
-
 .vertical-menu {
   text-align: center;
   margin-top: 80px;
@@ -164,20 +164,25 @@ h1.slogan {
 }
 
 .v-menu-top-row {
-  line-height: 100px;
+  line-height: 70px;
 }
 
-.over-logo {
+.overlay-logo {
   text-align: left;
-}
-
-.over-close{
-  text-align: right;
 }
 
 .v-menu-top-row img {
   height: 10px;
   vertical-align: middle;
+}
+
+.overlay-close{
+  text-align: right;
+}
+
+.cls-btn {
+  font-size: 20px;
+  cursor: pointer;
 }
 /* END HAMBURGER MENU */
 
@@ -335,11 +340,10 @@ padding: 80px;
 .right-card .card-content {
   background-image: url('../img/Cities-1500.jpg');
   background-size: cover;
-  background-position: center;
   min-height: 410px;
 }
 
-/* Begin social banner Section */
+/* social banner Section */
 .social-banner {
   background-image: url(../img/Social-Banner.jpg);
   background-size: cover;
@@ -376,8 +380,6 @@ padding: 80px;
   margin: 0 10px;
   font-size: 1.8em;
 }
-/* End social banner Section */
-
 /* END MAIN */
 /*==========*/
 
@@ -488,7 +490,7 @@ footer li > a {
   }
 
   .big-top-card .card-content {
-    padding: 130px;
+    padding: 100px 150px;
   }
 
   .left-card .card-content img {
@@ -592,7 +594,7 @@ footer li > a {
   }
 
   .big-top-card .card-content {
-    padding: 70px 40px;
+    padding: 90px;
   }
 
   .left-card img {
