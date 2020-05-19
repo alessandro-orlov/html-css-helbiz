@@ -597,6 +597,10 @@ footer li > a {
     padding: 90px;
   }
 
+  .big-top-card .card-content h2 {
+   font-size: 2.2em;
+ }
+
   .left-card img {
     height: 80%;
     margin-bottom: -100px;
