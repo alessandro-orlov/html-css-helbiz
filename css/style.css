@@ -129,6 +129,8 @@ h1.slogan {
 .teaser img {
   margin: 0 10px;
 }
+/* END HEADER */
+/*============*/
 
 /*===================*/
 /* BEGIN BURGER MENU */
@@ -139,7 +141,7 @@ h1.slogan {
   text-align: right;
   position: relative;
 }
-button#burger-menu  {
+#burger-menu  {
   background: none;
   border:none;
   outline: none;
@@ -226,10 +228,6 @@ button#burger-menu  {
 }
 /* END BURGER MENU */
 /*=================*/
-
-
-/* END HEADER */
-/*============*/
 
 /*============*/
 /* BEGIN MAIN */
@@ -449,6 +447,10 @@ footer li {
 footer li > a {
   color: #696969;
   font-size: 0.9em;
+}
+
+footer li > a:hover {
+  text-decoration: underline;
 }
 
 /* footer middle */
