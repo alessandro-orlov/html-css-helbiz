@@ -10,15 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/12bool.css">
     <link rel="stylesheet" href="css/style.css">
-    <script>
-      function on() {
-      document.getElementById("overlay").style.width = "100%";
-      }
-
-      function off() {
-      document.getElementById("overlay").style.width = "0%";
-      }
-    </script>
   </head>
   <body>
     <!-- Begin header -->
@@ -52,25 +43,22 @@
             </nav>
           </div>
 
-          <!-- Begin hamburger menu -->
+          <!-- Begin burger menu -->
           <div class="lg-display-none col-md-5 col-xs-5">
-            <div class="hamburger-menu">
-              <a href="javascript:void(0)" onclick="on()"><i class="fas fa-bars"></i></a>
+            <div class="burger-menu">
+              <button id="burger-menu">
+                <!-- <i class="fas fa-bars"></i> -->
+                <span></span>
+              </button>
             </div>
           </div>
-          <!-- End hamburger menu  -->
+          <!-- End burger menu  -->
 
           <!-- Begin menu only for medium and small devices  -->
           <div id="overlay">
             <div class="container">
 
-              <div class="lg-display-none col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1">
-                <div class="v-menu-top-row overlay-logo">
-                  <img src="img/helbiz-new-logo-black.svg" alt="helbiz logo">
-                </div>
-              </div>
-
-              <div class="lg-display-none col-md-6 col-xs-6">
+              <div class="lg-display-none col-md-12 col-xs-12">
                 <div class="vertical-menu">
                   <ul>
                     <li><a href="">HELBIZGO</a></li>
@@ -80,12 +68,6 @@
                     <li><a href="">ABOUT</a></li>
                     <li><a href="">SHOP</a></li>
                   </ul>
-                </div>
-              </div>
-
-              <div class="lg-display-none col-md-2 col-xs-2">
-                <div class="v-menu-top-row overlay-close">
-                  <span onclick="off()" class="cls-btn"><i class="fas fa-times"></i></span>
                 </div>
               </div>
 
@@ -367,5 +349,6 @@
 
     </footer>
     <!-- End Footer -->
+    <script src="js/myscript.js"></script>
   </body>
 </html>

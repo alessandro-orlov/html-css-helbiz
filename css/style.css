@@ -32,7 +32,6 @@ a {
 .center {
   text-align: center;
 }
-
 /* END COMMON RULES */
 /*==================*/
 
@@ -101,12 +100,6 @@ header li a:last-child {
   border-right: none;
 }
 
-.hamburger-menu {
-  font-size: 25px;
-  line-height: 70px;
-  text-align: right;
-}
-
 /* jumbotron */
 .jumbotron {
   background-image: url(../img/header-jumbo.jpg);
@@ -137,12 +130,74 @@ h1.slogan {
   margin: 0 10px;
 }
 
-/* BEGIN HAMBURGER MENU */
+/*===================*/
+/* BEGIN BURGER MENU */
+
+/* Burger button */
+.burger-menu {
+  line-height: 70px; /* height of header line*/
+  text-align: right;
+  position: relative;
+}
+button#burger-menu  {
+  background: none;
+  border:none;
+  outline: none;
+  cursor: pointer;
+  height: 23px;
+}
+
+#burger-menu span {
+  display: inline-block;
+  width: 35px;
+  height: 3px;
+  background-color: #444;
+  position: relative;
+  vertical-align: middle;
+  transition: .2s;
+}
+
+#burger-menu span::before {
+  content: '';
+  width: 35px;
+  height: 3px;
+  background-color: #444;
+  position: absolute;
+  top: -8px;
+  left:0;
+  transition: .2s;
+}
+
+#burger-menu span::after {
+  content: '';
+  width: 35px;
+  height: 3px;
+  background-color: #444;
+  position: absolute;
+  top: 8px;
+  left:0;
+  transition: .2s;
+}
+
+#burger-menu.active span {
+  height: 0;
+}
+
+#burger-menu.active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+#burger-menu.active span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+/* Burger menu*/
 #overlay {
   position: fixed;
-  height: 100%;
-  width: 0;
-  top: 0;
+  height: calc(100vh - 70px);
+  top: 70px;
   left: 0;
   background-color:#fff;
   z-index: 100;
@@ -152,7 +207,6 @@ h1.slogan {
 
 .vertical-menu {
   text-align: center;
-  margin-top: 80px;
 }
 
 .vertical-menu li {
@@ -163,28 +217,15 @@ h1.slogan {
   font-size: 25px;
 }
 
-.v-menu-top-row {
-  line-height: 70px;
+.width-0 {
+  width: 0%;
 }
 
-.overlay-logo {
-  text-align: left;
+.width-100 {
+  width: 100%;
 }
-
-.v-menu-top-row img {
-  height: 10px;
-  vertical-align: middle;
-}
-
-.overlay-close{
-  text-align: right;
-}
-
-.cls-btn {
-  font-size: 20px;
-  cursor: pointer;
-}
-/* END HAMBURGER MENU */
+/* END BURGER MENU */
+/*=================*/
 
 
 /* END HEADER */
