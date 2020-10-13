@@ -1,5 +1,3 @@
 # HELBIZ <h1>
 
-
-http://github.com - automatic!
-[GitHub](http://github.com)
+[helbiz responsive layout](https://alessandro-orlov.github.io/html-css-helbiz/)
