@@ -1,6 +1,6 @@
 # HELBIZ <h1>
 
-Completely responsive of Helbiz website layout
+Completely responsive Helbiz website layout
 
 live: [alessandro-orlov/helbiz](https://alessandro-orlov.github.io/html-css-helbiz/)
 
